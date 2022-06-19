@@ -1,1 +1,1 @@
-Hello!|3.93|INZERNAL - Lua executor!?!?!!??! (discord.gg/qjVawZvHVY)|true|Changelog\n  1.Added new lua executor\n  2.Improve auto captcha solver|1.8|)25 *5*5mno :.5928c|
+Hello!|3.93|INZERNAL - Lua executor!?!?!!??! (discord.gg/qjVawZvHVY)|true|Changelog\n  1.Removed custom server|1.8|)25 *5*5mno :.5928c|
