@@ -1,1 +1,1 @@
-Hello!|3.93|INZERNAL - This internal is free don't get scammed! (Download on: github.com/HertZxD/inzernal-version)|true|Changelog\n  1.Removed custom server\n  2.Fixed consumable issue|1.8|)25 *5*5mno :.5928c|
+Hello!|3.95|INZERNAL - This internal is free don't get scammed! (Download on: github.com/HertZxD/inzernal-version)|true|Changelog\n  1.Removed custom server\n  2.Fixed consumable issue|1.8|)25 *5*5mno :.5928c|
