@@ -1,6 +1,7 @@
 # Functions
 * [SendPacket](#sendpacket)
 * [SendPacketRaw](#sendpacketraw)
+* [SendVarlist](#sendvarlist)
 * [log](#log)
 * [FindPath](#findpath)
 * [GetLocal](#getlocal)
@@ -10,14 +11,12 @@
 * [GetTile](#gettile)
 * [GetTiles](#gettiles)
 * [AddCallback](#addcallback)
-* [RunThread](#runthread)
-* [Wait](#wait)
 
 
 ## SendPacket
 `SendPacket(int type, string packet)`
 
-Sends text packet with selected type to client or server, if client is set to true then it sends to client and if its false it sends to server.
+Sends text packet with selected type to server.
 
 Example:
 ```lua
@@ -28,7 +27,7 @@ SendPacket(2, "action|respawn")
 ## SendPacketRaw
 `SendPacketRaw(GamePacket packet)`
 
-Sends [GamePacket](#gamepacket) to server or client, if client is set to true then it sends to client and if its false it sends to server.
+Sends [GamePacket](#gamepacket) to server.
 
 Example:
 ```lua
@@ -37,6 +36,19 @@ local packet = {}
 packet.type = 10 
 packet.int_data = 48 -- Clothing ID (Jeans)
 SendPacketRaw(packet)
+```
+
+## SendVarlist
+`SendVarlist(table varlist)`
+
+Example:
+```lua
+local var = {} --make table
+var[0] = "OnConsoleMessage"
+var[1] = "Dababy!"
+var.netid = -1 --need to put netid or it doesn't work
+
+SendVarlist(var)
 ```
 
 ## log
@@ -151,35 +163,6 @@ function hook(varlist)
 end
 
 AddCallback("Cool", hook)
-```
-
-## Wait
-`Wait(int sec)`
-put a delay inside a [Thread](#runthread)
-
-Example:
-```lua
-local function wow(a, b)
-	log(a)
-	Wait(1)
-	log(b)
-end
-RunThread(function()
-	wow("Hello", "World")
-end)
-```
-
-## RunThread
-`RunThread(function)`
-Run a function in a different thread
-
-Example
-```lua
-RunThread(function()
-	log("Hello")
-	Wait(1)
-	log("World!")
-end)
 ```
 
 # Structs
